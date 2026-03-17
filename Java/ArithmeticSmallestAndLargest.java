@@ -4,18 +4,26 @@ public class ArithmeticSmallestAndLargest {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter an integer: ");
-        int number = input.nextInt();
-        int numberSquared = number * number;
+        System.out.print("Enter first integer: ");
+        int firstNumber = input.nextInt();
+        System.out.print("Enter second integer: ");
+        int secondNumber = input.nextInt();
+        System.out.print("Enter third integer: ");
+        int thirdNumber = input.nextInt();
 
-        if (number > 100) System.out.printf("%d is greater than 100%n", number);
-        if (number == 100) System.out.printf("%d is equal to 100%n", number);
-        if (number != 100) System.out.printf("%d is not equal to 100%n", number);
-        if (number < 100) System.out.printf("%d is less than 100%n", number);
+        int sum = firstNumber + secondNumber + thirdNumber;
+        int average = sum / 3;
+        int product = firstNumber * secondNumber * thirdNumber;
 
-        if (numberSquared > 100) System.out.printf("%d is greater than 100%n", numberSquared);
-        if (numberSquared == 100) System.out.printf("%d is equal to 100%n", numberSquared);
-        if (numberSquared != 100) System.out.printf("%d is not equal to 100%n", numberSquared);
-        if (numberSquared < 100) System.out.printf("%d is less than 100%n", numberSquared);
+        int smallest = firstNumber;
+        if (secondNumber < smallest) smallest = secondNumber;
+        if (thirdNumber < smallest) smallest = thirdNumber;
+
+        int largest = firstNumber;
+        if (secondNumber > largest) largest = secondNumber;
+        if (thirdNumber > largest) largest = thirdNumber;
+
+        System.out.printf("Smallest: %d, Largest: %d%n", smallest, largest);
+        System.out.printf("Sum: %d, Average: %d, Product: %d%n", sum, average, product);
     }
 }
