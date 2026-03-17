@@ -3,7 +3,7 @@ public class Task3{
 		
 		int i = 0;
 		while(i++ < 100) {
-			if(i % 2 != 0) System.out.printf("%d, ", i);
+			if(i % 2 != 0) System.out.printf("%d ", i);
 		}
 	} 
 
