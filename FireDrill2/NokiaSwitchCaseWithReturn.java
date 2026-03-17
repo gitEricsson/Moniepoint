@@ -51,12 +51,36 @@ public class NokiaSwitchCaseWithReturn {
                         phoneBookLoop = false;
                         menuLoop = false;
                     }
-                    case 2 -> System.out.println("Service Nos.");
-                    case 3 -> System.out.println("Add name");
-                    case 4 -> System.out.println("Erase");
-                    case 5 -> System.out.println("Edit");
-                    case 6 -> System.out.println("Assign tone");
-                    case 7 -> System.out.println("Send b'card");
+                    case 2 -> {
+                        System.out.println("Service Nos.");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
+                    case 3 -> {
+                        System.out.println("Add name");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
+                    case 4 -> {
+                        System.out.println("Erase");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
+                    case 5 -> {
+                        System.out.println("Edit");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
+                    case 6 -> {
+                        System.out.println("Assign tone");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
+                    case 7 -> {
+                        System.out.println("Send b'card");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
                     case 8 -> {
                         boolean optionsLoop = true;
                         while (optionsLoop) {
@@ -68,15 +92,33 @@ public class NokiaSwitchCaseWithReturn {
                         System.out.println(prompt);
                         int optChoice = input.nextInt();
                         switch (optChoice) {
-                            case 1 -> System.out.println("Type of view");
-                            case 2 -> System.out.println("Memory status");
+                            case 1 -> {
+                                System.out.println("Type of view");
+                                optionsLoop = false;
+                                phoneBookLoop = false;
+                                menuLoop = false;
+                            }
+                            case 2 -> {
+                                System.out.println("Memory status");
+                                optionsLoop = false;
+                                phoneBookLoop = false;
+                                menuLoop = false;
+                            }
                             case 0 -> optionsLoop = false;
                             default -> System.out.println("Invalid selection");
                         }
                     }
                 }
-                    case 9 -> System.out.println("Speed dials");
-                    case 10 -> System.out.println("Voice tags");
+                    case 9 -> {
+                        System.out.println("Speed dials");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
+                    case 10 -> {
+                        System.out.println("Voice tags");
+                        phoneBookLoop = false;
+                        menuLoop = false;
+                    }
                     case 0 -> phoneBookLoop = false;
                     default -> System.out.println("Invalid selection");
                 }
@@ -101,12 +143,36 @@ public class NokiaSwitchCaseWithReturn {
                 System.out.println(prompt);
                 int subChoice = input.nextInt();
                 switch (subChoice) {
-                    case 1 -> System.out.println("Write messages");
-                    case 2 -> System.out.println("Inbox");
-                    case 3 -> System.out.println("Outbox");
-                    case 4 -> System.out.println("Picture messages");
-                    case 5 -> System.out.println("Templates");
-                    case 6 -> System.out.println("Smileys");
+                    case 1 -> {
+                        System.out.println("Write messages");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 2 -> {
+                        System.out.println("Inbox");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 3 -> {
+                        System.out.println("Outbox");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 4 -> {
+                        System.out.println("Picture messages");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 5 -> {
+                        System.out.println("Templates");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 6 -> {
+                        System.out.println("Smileys");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
                     case 7 -> {
                         boolean messageSettingsLoop = true;
                         while (messageSettingsLoop) {
@@ -130,9 +196,27 @@ public class NokiaSwitchCaseWithReturn {
                                 System.out.println(prompt);
                                 int set1Choice = input.nextInt();
                                 switch (set1Choice) {
-                                    case 1 -> System.out.println("Message centre number");
-                                    case 2 -> System.out.println("Messages sent as");
-                                    case 3 -> System.out.println("Message validity");
+                                    case 1 -> {
+                                        System.out.println("Message centre number");
+                                        set1Loop = false;
+                                        messageSettingsLoop = false;
+                                        messagesLoop = false;
+                                        menuLoop = false;
+                                    }
+                                    case 2 -> {
+                                        System.out.println("Messages sent as");
+                                        set1Loop = false;
+                                        messageSettingsLoop = false;
+                                        messagesLoop = false;
+                                        menuLoop = false;
+                                    }
+                                    case 3 -> {
+                                        System.out.println("Message validity");
+                                        set1Loop = false;
+                                        messageSettingsLoop = false;
+                                        messagesLoop = false;
+                                        menuLoop = false;
+                                    }
                                     case 0 -> set1Loop = false;
                                     default -> System.out.println("Invalid selection");
                                 }
@@ -150,9 +234,27 @@ public class NokiaSwitchCaseWithReturn {
                                 System.out.println(prompt);
                                 int commonChoice = input.nextInt();
                                 switch (commonChoice) {
-                                    case 1 -> System.out.println("Delivery reports");
-                                    case 2 -> System.out.println("Reply via same centre");
-                                    case 3 -> System.out.println("Character support");
+                                    case 1 -> {
+                                        System.out.println("Delivery reports");
+                                        commonLoop = false;
+                                        messageSettingsLoop = false;
+                                        messagesLoop = false;
+                                        menuLoop = false;
+                                    }
+                                    case 2 -> {
+                                        System.out.println("Reply via same centre");
+                                        commonLoop = false;
+                                        messageSettingsLoop = false;
+                                        messagesLoop = false;
+                                        menuLoop = false;
+                                    }
+                                    case 3 -> {
+                                        System.out.println("Character support");
+                                        commonLoop = false;
+                                        messageSettingsLoop = false;
+                                        messagesLoop = false;
+                                        menuLoop = false;
+                                    }
                                     case 0 -> commonLoop = false;
                                     default -> System.out.println("Invalid selection");
                                 }
@@ -161,15 +263,30 @@ public class NokiaSwitchCaseWithReturn {
                     }
                     }
                 }
-                    case 8 -> System.out.println("Info service");
-                    case 9 -> System.out.println("Voice mailbox number");
-                    case 10 -> System.out.println("Service command editor");
+                    case 8 -> {
+                        System.out.println("Info service");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 9 -> {
+                        System.out.println("Voice mailbox number");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 10 -> {
+                        System.out.println("Service command editor");
+                        messagesLoop = false;
+                        menuLoop = false;
+                    }
                     case 0 -> messagesLoop = false;
                     default -> System.out.println("Invalid selection");
                 }
             }
         }
-            case 3 -> System.out.println("Chat");
+            case 3 -> {
+                System.out.println("Chat");
+                menuLoop = false;
+            }
             case 4 -> {
                 boolean callRegisterLoop = true;
                 while (callRegisterLoop) {
@@ -187,10 +304,26 @@ public class NokiaSwitchCaseWithReturn {
                 System.out.println(prompt);
                 int subChoice = input.nextInt();
                 switch (subChoice) {
-                    case 1 -> System.out.println("Missed calls");
-                    case 2 -> System.out.println("Received calls");
-                    case 3 -> System.out.println("Dialled numbers");
-                    case 4 -> System.out.println("Erase recent call lists");
+                    case 1 -> {
+                        System.out.println("Missed calls");
+                        callRegisterLoop = false;
+                        menuLoop = false;
+                    }
+                    case 2 -> {
+                        System.out.println("Received calls");
+                        callRegisterLoop = false;
+                        menuLoop = false;
+                    }
+                    case 3 -> {
+                        System.out.println("Dialled numbers");
+                        callRegisterLoop = false;
+                        menuLoop = false;
+                    }
+                    case 4 -> {
+                        System.out.println("Erase recent call lists");
+                        callRegisterLoop = false;
+                        menuLoop = false;
+                    }
                     case 5 -> {
                         boolean showCallDurationLoop = true;
                         while (showCallDurationLoop) {
@@ -205,11 +338,36 @@ public class NokiaSwitchCaseWithReturn {
                         System.out.println(prompt);
                         int durationChoice = input.nextInt();
                         switch (durationChoice) {
-                            case 1 -> System.out.println("Last call duration");
-                            case 2 -> System.out.println("All calls' duration");
-                            case 3 -> System.out.println("Received calls' duration");
-                            case 4 -> System.out.println("Dialled calls' duration");
-                            case 5 -> System.out.println("Clear timers");
+                            case 1 -> {
+                                System.out.println("Last call duration");
+                                showCallDurationLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
+                            case 2 -> {
+                                System.out.println("All calls' duration");
+                                showCallDurationLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
+                            case 3 -> {
+                                System.out.println("Received calls' duration");
+                                showCallDurationLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
+                            case 4 -> {
+                                System.out.println("Dialled calls' duration");
+                                showCallDurationLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
+                            case 5 -> {
+                                System.out.println("Clear timers");
+                                showCallDurationLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
                             case 0 -> showCallDurationLoop = false;
                             default -> System.out.println("Invalid selection");
                         }
@@ -227,9 +385,24 @@ public class NokiaSwitchCaseWithReturn {
                         System.out.println(prompt);
                         int costChoice = input.nextInt();
                         switch (costChoice) {
-                            case 1 -> System.out.println("Last call cost");
-                            case 2 -> System.out.println("All calls' cost");
-                            case 3 -> System.out.println("Clear counters");
+                            case 1 -> {
+                                System.out.println("Last call cost");
+                                showCallCostsLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
+                            case 2 -> {
+                                System.out.println("All calls' cost");
+                                showCallCostsLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
+                            case 3 -> {
+                                System.out.println("Clear counters");
+                                showCallCostsLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
                             case 0 -> showCallCostsLoop = false;
                             default -> System.out.println("Invalid selection");
                         }
@@ -246,14 +419,28 @@ public class NokiaSwitchCaseWithReturn {
                         System.out.println(prompt);
                         int costSetChoice = input.nextInt();
                         switch (costSetChoice) {
-                            case 1 -> System.out.println("Call cost limit");
-                            case 2 -> System.out.println("Show costs in");
+                            case 1 -> {
+                                System.out.println("Call cost limit");
+                                callCostSettingsLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
+                            case 2 -> {
+                                System.out.println("Show costs in");
+                                callCostSettingsLoop = false;
+                                callRegisterLoop = false;
+                                menuLoop = false;
+                            }
                             case 0 -> callCostSettingsLoop = false;
                             default -> System.out.println("Invalid selection");
                         }
                     }
                     }
-                    case 8 -> System.out.println("Prepaid credit");
+                    case 8 -> {
+                        System.out.println("Prepaid credit");
+                        callRegisterLoop = false;
+                        menuLoop = false;
+                    }
                     case 0 -> callRegisterLoop = false;
                     default -> System.out.println("Invalid selection");
                 }
@@ -277,15 +464,51 @@ public class NokiaSwitchCaseWithReturn {
                 System.out.println(prompt);
                 int subChoice = input.nextInt();
                 switch (subChoice) {
-                    case 1 -> System.out.println("Ringing tone");
-                    case 2 -> System.out.println("Ringing volume");
-                    case 3 -> System.out.println("Incoming call alert");
-                    case 4 -> System.out.println("Composer");
-                    case 5 -> System.out.println("Message alert tone");
-                    case 6 -> System.out.println("Keypad tones");
-                    case 7 -> System.out.println("Warning and game tones");
-                    case 8 -> System.out.println("Vibrating alert");
-                    case 9 -> System.out.println("Screen saver");
+                    case 1 -> {
+                        System.out.println("Ringing tone");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 2 -> {
+                        System.out.println("Ringing volume");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 3 -> {
+                        System.out.println("Incoming call alert");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 4 -> {
+                        System.out.println("Composer");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 5 -> {
+                        System.out.println("Message alert tone");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 6 -> {
+                        System.out.println("Keypad tones");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 7 -> {
+                        System.out.println("Warning and game tones");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 8 -> {
+                        System.out.println("Vibrating alert");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
+                    case 9 -> {
+                        System.out.println("Screen saver");
+                        tonesLoop = false;
+                        menuLoop = false;
+                    }
                     case 0 -> tonesLoop = false;
                     default -> System.out.println("Invalid selection");
                 }
@@ -319,12 +542,42 @@ public class NokiaSwitchCaseWithReturn {
                         System.out.println(prompt);
                         int callSetChoice = input.nextInt();
                         switch (callSetChoice) {
-                            case 1 -> System.out.println("Automatic redial");
-                            case 2 -> System.out.println("Speed dialling");
-                            case 3 -> System.out.println("Call waiting options");
-                            case 4 -> System.out.println("Own number sending");
-                            case 5 -> System.out.println("Phone line in use");
-                            case 6 -> System.out.println("Automatic answer");
+                            case 1 -> {
+                                System.out.println("Automatic redial");
+                                callSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 2 -> {
+                                System.out.println("Speed dialling");
+                                callSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 3 -> {
+                                System.out.println("Call waiting options");
+                                callSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 4 -> {
+                                System.out.println("Own number sending");
+                                callSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 5 -> {
+                                System.out.println("Phone line in use");
+                                callSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 6 -> {
+                                System.out.println("Automatic answer");
+                                callSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
                             case 0 -> callSettingsLoop = false;
                             default -> System.out.println("Invalid selection");
                         }
@@ -345,12 +598,42 @@ public class NokiaSwitchCaseWithReturn {
                         System.out.println(prompt);
                         int phoneSetChoice = input.nextInt();
                         switch (phoneSetChoice) {
-                            case 1 -> System.out.println("Language");
-                            case 2 -> System.out.println("Cell info display");
-                            case 3 -> System.out.println("Welcome note");
-                            case 4 -> System.out.println("Network selection");
-                            case 5 -> System.out.println("Lights");
-                            case 6 -> System.out.println("Confirm SIM service actions");
+                            case 1 -> {
+                                System.out.println("Language");
+                                phoneSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 2 -> {
+                                System.out.println("Cell info display");
+                                phoneSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 3 -> {
+                                System.out.println("Welcome note");
+                                phoneSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 4 -> {
+                                System.out.println("Network selection");
+                                phoneSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 5 -> {
+                                System.out.println("Lights");
+                                phoneSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 6 -> {
+                                System.out.println("Confirm SIM service actions");
+                                phoneSettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
                             case 0 -> phoneSettingsLoop = false;
                             default -> System.out.println("Invalid selection");
                         }
@@ -371,27 +654,73 @@ public class NokiaSwitchCaseWithReturn {
                         System.out.println(prompt);
                         int secChoice = input.nextInt();
                         switch (secChoice) {
-                            case 1 -> System.out.println("PIN code request");
-                            case 2 -> System.out.println("Call barring service");
-                            case 3 -> System.out.println("Fixed dialling");
-                            case 4 -> System.out.println("Closed user group");
-                            case 5 -> System.out.println("Phone security");
-                            case 6 -> System.out.println("Change access codes");
+                            case 1 -> {
+                                System.out.println("PIN code request");
+                                securitySettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 2 -> {
+                                System.out.println("Call barring service");
+                                securitySettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 3 -> {
+                                System.out.println("Fixed dialling");
+                                securitySettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 4 -> {
+                                System.out.println("Closed user group");
+                                securitySettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 5 -> {
+                                System.out.println("Phone security");
+                                securitySettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
+                            case 6 -> {
+                                System.out.println("Change access codes");
+                                securitySettingsLoop = false;
+                                settingsLoop = false;
+                                menuLoop = false;
+                            }
                             case 0 -> securitySettingsLoop = false;
                             default -> System.out.println("Invalid selection");
                         }
                     }
                 }
-                    case 4 -> System.out.println("Restore factory settings");
+                    case 4 -> {
+                        System.out.println("Restore factory settings");
+                        settingsLoop = false;
+                        menuLoop = false;
+                    }
                     case 0 -> settingsLoop = false;
                     default -> System.out.println("Invalid selection");
                 }
             }
         }
-            case 7 -> System.out.println("Call divert");
-            case 8 -> System.out.println("Games");
-            case 9 -> System.out.println("Calculator");
-            case 10 -> System.out.println("Reminders");
+            case 7 -> {
+                System.out.println("Call divert");
+                menuLoop = false;
+            }
+            case 8 -> {
+                System.out.println("Games");
+                menuLoop = false;
+            }
+            case 9 -> {
+                System.out.println("Calculator");
+                menuLoop = false;
+            }
+            case 10 -> {
+                System.out.println("Reminders");
+                menuLoop = false;
+            }
             case 11 -> {
                 boolean clockLoop = true;
                 while (clockLoop) {
@@ -407,19 +736,49 @@ public class NokiaSwitchCaseWithReturn {
                 System.out.println(prompt);
                 int subChoice = input.nextInt();
                 switch (subChoice) {
-                    case 1 -> System.out.println("Alarm clock");
-                    case 2 -> System.out.println("Clock settings");
-                    case 3 -> System.out.println("Date setting");
-                    case 4 -> System.out.println("Stopwatch");
-                    case 5 -> System.out.println("Countdown timer");
-                    case 6 -> System.out.println("Auto update of date and time");
+                    case 1 -> {
+                        System.out.println("Alarm clock");
+                        clockLoop = false;
+                        menuLoop = false;
+                    }
+                    case 2 -> {
+                        System.out.println("Clock settings");
+                        clockLoop = false;
+                        menuLoop = false;
+                    }
+                    case 3 -> {
+                        System.out.println("Date setting");
+                        clockLoop = false;
+                        menuLoop = false;
+                    }
+                    case 4 -> {
+                        System.out.println("Stopwatch");
+                        clockLoop = false;
+                        menuLoop = false;
+                    }
+                    case 5 -> {
+                        System.out.println("Countdown timer");
+                        clockLoop = false;
+                        menuLoop = false;
+                    }
+                    case 6 -> {
+                        System.out.println("Auto update of date and time");
+                        clockLoop = false;
+                        menuLoop = false;
+                    }
                     case 0 -> clockLoop = false;
                     default -> System.out.println("Invalid selection");
                 }
             }
             }
-            case 12 -> System.out.println("Profiles");
-            case 13 -> System.out.println("SIM services");
+            case 12 -> {
+                System.out.println("Profiles");
+                menuLoop = false;
+            }
+            case 13 -> {
+                System.out.println("SIM services");
+                menuLoop = false;
+            }
             case 0 -> menuLoop = false;
             default -> System.out.println("Invalid selection.");        }
     }
