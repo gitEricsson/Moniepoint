@@ -1,6 +1,7 @@
+package Day2.FireDrill2;
 import java.util.Scanner;
 
-public class Task7 {
+public class Task6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -76,7 +77,6 @@ public class Task7 {
 
         int averageOfEvenNumbers = sumOfEvenNumbers / countOfEvenNumbers;
 
-        System.out.printf("The Sum of the Even numbers is %d%n", sumOfEvenNumbers);
         System.out.printf("The Average of the Even numbers is %d%n", averageOfEvenNumbers);
     }
 }

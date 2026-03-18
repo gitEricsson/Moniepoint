@@ -1,3 +1,4 @@
+package Day2.FireDrill1;
 public class Task7{
 	public static void main(String[] args){
 		
