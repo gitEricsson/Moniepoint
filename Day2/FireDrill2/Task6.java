@@ -1,4 +1,3 @@
-package Day2.FireDrill2;
 import java.util.Scanner;
 
 public class Task6 {

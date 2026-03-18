@@ -1,4 +1,3 @@
-package Day2.FireDrill1;
 public class Task8{
 	public static void main(String[] args){
 		int sum = 0;
