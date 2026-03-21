@@ -22,4 +22,11 @@ public class BackToSenderLogisticsTest {
         assertEquals(21250, logistics.calculateRiderWage(65));
         assertEquals(45000, logistics.calculateRiderWage(80));
     }
+
+    @Test
+    @DisplayName("Test calculateRiderWage Input Validation")
+    public void testCalculateRiderWageInputValidation() {
+        assertEquals("Successful deliveries cannot be negative", logistics.calculateRiderWage(-1));
+        assertEquals("Successful deliveries cannot exceed the daily quota of 100", logistics.calculateRiderWage(101));
+    }
 }
