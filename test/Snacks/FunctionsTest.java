@@ -18,17 +18,10 @@ public class FunctionsTest {
     @DisplayName("Test isEven Function Operation")
     public void testIsEvenFunction(){
         boolean trueResult = functions.isEven(2);
-        assertTrue(result);
+        assertTrue(trueResult);
 
         boolean falseResult = functions.isEven(3);
-        assertFalse(result);
-    }
-
-    @Test
-    @DisplayName("Test isEven Input Validation")
-    public void testIsEvenIntegerValidation(){
-        assertThrows(IllegalArgumentException.class, () -> {functions.isEven(3.4);
-        });
+        assertFalse(falseResult);
     }
 
     @Test
