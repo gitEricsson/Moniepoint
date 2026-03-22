@@ -1,6 +1,17 @@
 package snacks;
 
+import java.util.Scanner;
+
 public class CreditCardValidator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hello, Kindly Enter Card details to verify");
+        String cardNumber = scanner.nextLine();
+
+        CreditCardValidator validator = new CreditCardValidator();
+        validator.displayCardInfo(cardNumber);
+    }
 
     public String getCreditCardType(String cardNumber) {
         if (cardNumber.startsWith("4")) return "Visa Cards";
