@@ -40,14 +40,14 @@ class StudentGradeTest {
     @DisplayName("Test highest score in subject is identified correctly")
     void testHighestScoreInSubjectIsIdentified() {
         int[] subjectScores = {67, 98, 93, 78};
-        assertEquals(98, studentGrade.findHighestScoreIn(subjectScores));
+        assertEquals(1, studentGrade.findHighestScorerIndex(subjectScores));
     }
 
     @Test
     @DisplayName("Test lowest score in subject is identified correctly")
     void testLowestScoreInSubjectIsIdentified() {
         int[] subjectScores = {67, 98, 93, 78};
-        assertEquals(67, studentGrade.findLowestScoreIn(subjectScores));
+        assertEquals(0, studentGrade.findLowestScorerIndex(subjectScores));
     }
 
     @Test
