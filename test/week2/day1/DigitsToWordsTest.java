@@ -19,6 +19,6 @@ public class DigitsToWordsTest {
     @DisplayName("Test Correct Words return for Digits")
     void testCorrectWordsReturnForDigits() {
         int amount = 99;
-        assertEquals("ninety-nine", digitsToWords.digitsResult(amount));
+        assertEquals("ninety nine", digitsToWords.digitsResult(amount));
     }
 }
