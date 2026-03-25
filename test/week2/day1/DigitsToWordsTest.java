@@ -3,7 +3,6 @@ package week2.day1;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import snacks.StudentGrade;
 
 import static org.junit.jupiter.api.Assertions.*;
 
