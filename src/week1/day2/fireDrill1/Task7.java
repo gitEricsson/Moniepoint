@@ -1,4 +1,4 @@
-package week1.day2.firedrill1;
+package week1.day2.fireDrill1;
 
 public class Task7{
 	public static void main(String[] args){

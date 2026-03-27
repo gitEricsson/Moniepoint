@@ -1,4 +1,4 @@
-package week1.day2.firedrill2;
+package week1.day2.fireDrill2;
 
 import java.util.Scanner;
 

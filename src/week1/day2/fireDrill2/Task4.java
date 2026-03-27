@@ -1,8 +1,8 @@
-package week1.day2.firedrill2;
+package week1.day2.fireDrill2;
 
 import java.util.Scanner;
 
-public class Task1 {
+public class Task4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -27,9 +27,10 @@ public class Task1 {
         System.out.print("Enter tenth integer: ");
         int tenthNumber = input.nextInt();
 
-        int sumOfNumbers = firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber + sixthNumber + seventhNumber + eighthNumber + ninthNumber + tenthNumber;
+        int sumOfEvenIndexes = secondNumber + fourthNumber + sixthNumber + eighthNumber + tenthNumber;
+        int averageOfEvenIndexes = sumOfEvenIndexes / 5;
     
 
-        System.out.printf("The Sum of the 10 integers is %d%n", sumOfNumbers);
+        System.out.printf("The Sum of the Even numbers is %d%n", sumOfEvenIndexes);
     }
 }

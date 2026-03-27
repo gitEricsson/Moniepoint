@@ -1,8 +1,8 @@
-package week1.day2.firedrill2;
+package week1.day2.fireDrill2;
 
 import java.util.Scanner;
 
-public class Task2 {
+public class Task3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -30,6 +30,8 @@ public class Task2 {
         int sumOfNumbers = firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber + sixthNumber + seventhNumber + eighthNumber + ninthNumber + tenthNumber;
         int averageOfNumbers = sumOfNumbers / 10;
     
+
+        System.out.printf("The Sum of the 10 integers is %d%n", sumOfNumbers);
         System.out.printf("The Average of the 10 integers is %d%n", averageOfNumbers);
     }
 }
