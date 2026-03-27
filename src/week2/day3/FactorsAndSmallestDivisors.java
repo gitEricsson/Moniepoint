@@ -2,7 +2,7 @@ package week2.day3;
 
 import java.util.ArrayList;
 
-public class Factors {
+public class FactorsAndSmallestDivisors {
 
     public static ArrayList<Integer> arrayOfFactors(int number){
         int count = 2;

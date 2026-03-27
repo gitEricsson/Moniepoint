@@ -1,6 +1,5 @@
 package week2.day3;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +7,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FactorsTest {
+public class FactorsAndSmallestDivisorsTest {
     @Test
     @DisplayName("Test an array of factors is returned for an integer")
     public void testArrayOfFactors(){
@@ -18,7 +17,7 @@ public class FactorsTest {
         factors.add(6);
         factors.add(9);
         factors.add(18);
-        assertEquals(factors, Factors.arrayOfFactors(18));
+        assertEquals(factors, FactorsAndSmallestDivisors.arrayOfFactors(18));
     }
 
     @Test
@@ -29,6 +28,6 @@ public class FactorsTest {
         factors.add(2);
         factors.add(3);
         factors.add(3);
-        assertEquals(factors, Factors.arrayOfDivisors(18));
+        assertEquals(factors, FactorsAndSmallestDivisors.arrayOfDivisors(18));
     }
 }

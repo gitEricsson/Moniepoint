@@ -58,7 +58,7 @@ public class Account {
 
     public void updatePin(String oldPin, String newPin) {
         validatePin(oldPin);
-        this.pin = pin;
+        this.pin = newPin;
     }
 
     public UUID getAccountNumber(){

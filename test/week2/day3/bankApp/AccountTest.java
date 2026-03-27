@@ -87,4 +87,24 @@ public class AccountTest {
         assertThrows(InvalidAmountException.class, ()-> account.withdraw(BigDecimal.valueOf(-1_000), pin));
         assertEquals(deposit, account.checkBalance(pin));
     }
+
+    @Test
+    @DisplayName("Test pin updates")
+    public void changePin_checkBalanceWithNewPin() {
+        String newPin = "4321";
+        account.updatePin(pin, newPin);
+        assertEquals(BigDecimal.ZERO, account.checkBalance(newPin));
+    }
+
+    @Test
+    @DisplayName("Test pin updates throws Exception when action is done with old pin")
+    public void changePin_checkBalanceWithOldPin() {
+        String newPin = "4321";
+        account.updatePin(pin, newPin);
+
+        assertThrows(InvalidPinException.class, ()-> account.checkBalance(pin));
+        assertEquals(BigDecimal.ZERO, account.checkBalance(newPin));
+    }
+
+
 }
